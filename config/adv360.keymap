@@ -71,11 +71,11 @@
         nav {
             display-name = "Nav";
             bindings = <
-&trans  &trans      &trans  &trans     &trans  &trans  &trans                                      &trans  &trans    &trans    &trans  &trans     &trans  &trans
-&trans  &kp ESCAPE  &trans  &trans     &trans  &trans  &trans                                      &trans  &trans    &trans    &trans  &trans     &trans  &trans
-&trans  &trans      &trans  &trans     &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans  &trans      &trans  &kp LC(W)  &trans  &trans                  &trans      &trans                  &trans    &trans    &trans  &trans     &trans  &trans
-&trans  &trans      &trans  &trans     &trans          &trans  &trans  &trans      &trans  &trans  &trans            &trans    &trans  &trans     &trans  &trans
+&trans  &trans      &trans     &trans     &trans     &trans  &trans                                      &trans  &trans    &trans    &trans  &trans     &trans      &trans
+&trans  &kp ESCAPE  &kp LA(W)  &kp LA(E)  &trans     &trans  &trans                                      &trans  &kp LA(Y) &kp LA(U) &trans  &trans     &kp LA(P)   &trans
+&trans  &kp LA(A)   &trans     &kp LA(D)  &kp LA(F)  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp LA(L)   &trans
+&trans  &trans      &kp LA(X)  &kp LC(W)  &kp LA(V)  &kp LA(B)               &trans      &trans                  &trans    &trans    &trans  &trans     &trans      &trans
+&trans  &trans      &trans     &trans     &trans             &trans  &trans  &trans      &trans  &trans  &trans            &trans    &trans  &trans     &trans      &trans
             >;
         };
 
