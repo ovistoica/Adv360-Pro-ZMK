@@ -19,6 +19,20 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        mm_dot: mod_morph_dot {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LA(DOT)>, <&kp LA(GT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_comma: mod_morph_comma {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LA(COMMA)>, <&kp LA(LT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -74,7 +88,7 @@
 &trans  &trans      &trans     &trans     &trans     &trans  &trans                                      &trans  &trans    &trans    &trans  &trans     &trans      &trans
 &trans  &kp ESCAPE  &kp LA(W)  &kp LA(E)  &trans     &trans  &trans                                      &trans  &kp LA(Y) &kp LA(U) &trans  &trans     &kp LA(P)   &trans
 &trans  &kp LA(A)   &trans     &kp LA(D)  &kp LA(F)  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp LA(L)   &trans
-&trans  &trans      &kp LA(X)  &kp LC(W)  &kp LA(V)  &kp LA(B)               &trans      &trans                  &trans    &trans    &trans  &trans     &trans      &trans
+&trans  &trans      &kp LA(X)  &kp LC(W)  &kp LA(V)  &kp LA(B)               &trans      &trans                  &trans    &trans    &mm_comma   &mm_dot     &trans      &trans
 &trans  &trans      &trans     &trans     &trans             &trans  &trans  &trans      &trans  &trans  &trans            &trans    &trans  &trans     &trans      &trans
             >;
         };
